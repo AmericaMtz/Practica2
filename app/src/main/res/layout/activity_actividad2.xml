@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo3"
+    tools:context="mx.ipn.americamartinezevelinecruz.practica2reserva.Actividad2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/colour"
+                android:text="GRACIAS POR SU RESERVACION!!!"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/muestraDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="75dp"
+                android:fontFamily="@font/leters"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/hacerOtraReservacion"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dip"
+                android:background="?android:attr/textColorHighlight"
+                android:onClick="hacerOtraReserva"
+                android:text="Hacer Otra Reservacion" />
+
+            <Button
+                android:id="@+id/imagen"
+                android:layout_width="217dp"
+                android:layout_height="185dp"
+                android:layout_below="@+id/muestraDatos"
+                android:layout_gravity="center"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/muestraDatos"
+                android:background="@drawable/exposicion"
+                android:fontFamily="@font/learn"
+                android:text="Galeria"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
